@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-background: #f9f9f9;
+  --color-foreground: #353535;
+
+  --color-muted: #f5f5f5;
+  --color-muted-foreground: #5e5e5e;
+
+  --color-primary: #f22539;
+  --color-primary-foreground: #c00e20;
+
+  --color-secondary: #5e5e5e;
+  --color-secondary-foreground: #bfbfbf;
+
+  --color-accent: #eca539;
+  --color-accent-foreground: #f9f9f9;
+
+  --color-destructive: #c00e20;
+  --color-destructive-foreground: #f22539;
+
+  --gray-900: #353535;
+  --gray-700: #5e5e5e;
+  --gray-400: #bfbfbf;
+  --gray-200: #e8e8e8;
+  --gray-100: #f5f5f5;
+  --gray-50: #f9f9f9;
+
+  --font-lato: 'Lato', system-ui, sans-serif;
+
+  --radius: 0.357143rem; // 5px
+  --radius-md: 0.5rem; // 7px
+  --radius-lg: 0.75rem; // 10px
+  --shadow-soft: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
