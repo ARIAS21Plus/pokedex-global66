@@ -11,7 +11,7 @@ const props = defineProps<{
     viewBox="0 0 106 106"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    :class="['size-13', props.class]"
+    :class="['w-full', props.class]"
   >
     <circle cx="53" cy="53" r="51" fill="white" stroke="#333333" stroke-width="4" />
     <mask
