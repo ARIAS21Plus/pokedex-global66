@@ -12,6 +12,7 @@ const props = defineProps<{
 
 <template>
   <div class="space-y-2.5">
+    <!-- TODO: Add virtualization as a future enhancement -->
     <ItemPokemonContainer
       v-for="pokemon in props.pokemons"
       :key="pokemon.name"
