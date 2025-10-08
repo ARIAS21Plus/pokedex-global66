@@ -23,7 +23,7 @@
 
 Decidi usar este patron porque separa las responsabilidades en los componentes, el container se encarga de la logica mientras que el view de presentar la UI.
 
-###Ventajas
+### Ventajas
 
 - Separación de responsabilidades: la UI no se mezcla con la lógica.
 - Reutilización: el presenter puede usarse en distintos contextos.
@@ -36,7 +36,7 @@ Se compone de componentes atoms, molecules, organism, template
 
 Empiezo con piezas pequeñas (átomos), luego las combino para formar estructuras más grandes (moléculas, organismos, templates, páginas).
 
-###Ventajas:
+### Ventajas:
 
 - El patrón me permite trabajar en una parte específica sin temor a romper la UI global.
 - El patrón fomenta el diseño sistemático, ideal para proyectos que evolucionan constantemente.
@@ -46,7 +46,7 @@ Empiezo con piezas pequeñas (átomos), luego las combino para formar estructura
 
 Para que mis componentes no tuvieran tantas resposabilidades, separaba la logica en secciones usando composables, esto para mantener la reactividad
 
-###Ventajas:
+### Ventajas:
 
 - Separacion de resposabilidades
 - Facil lectura del código
@@ -72,23 +72,11 @@ Para el E2E primero se debe hacer build de la aplicación
 
 Trabajé bajo la versión de node: v22.14.0 y npm: 10.9.2
 
-## 📋 Tabla de Contenidos
-
-- [Descripción del Proyecto](#-descripción-del-proyecto)
-- [Stack Tecnológico](#-stack-tecnológico)
-- [Decisiones de Arquitectura](#-decisiones-de-arquitectura)
-- [Estructura del Proyecto](#-estructura-del-proyecto)
-- [Optimizaciones para Gran Volumen de Datos](#-optimizaciones-para-gran-volumen-de-datos)
-- [Patrones de Diseño](#-patrones-de-diseño)
-- [Testing](#-testing)
-- [Instalación y Uso](#-instalación-y-uso)
-- [Scripts Disponibles](#-scripts-disponibles)
-
 ---
 
-## 🎯 Descripción del Proyecto
+## Descripción del Proyecto
 
-Aplicación web que permite explorar, buscar y marcar como favoritos pokémons utilizando la [PokeAPI](https://pokeapi.co/). La aplicación está diseñada pensando en escalabilidad y rendimiento, capaz de manejar los más de 1000 pokémons disponibles en la API de manera eficiente.
+Aplicación web que permite explorar, buscar y marcar como favoritos pokémons utilizando la [PokeAPI](https://pokeapi.co/).
 
 ### Características Principales
 
