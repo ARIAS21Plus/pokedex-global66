@@ -13,7 +13,15 @@ import Button from '@/components/atoms/Button.vue'
         The digital encyclopedia created by Professor Oak is an invaluable tool to Trainers in the
         Pokémon world.
       </p>
-      <Button :as="RouterLink" to="/search" variant="primary" rounded="full"> Get started </Button>
+      <Button
+        data-testid="get-started-btn"
+        :as="RouterLink"
+        to="/search"
+        variant="primary"
+        rounded="full"
+      >
+        Get started
+      </Button>
     </div>
   </div>
 </template>

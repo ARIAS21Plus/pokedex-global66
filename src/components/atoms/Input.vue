@@ -41,6 +41,7 @@ const emit = defineEmits(['update:modelValue'])
     </div>
 
     <input
+      data-testid="search-input"
       :class="[
         'placeholder:text-secondary-foreground outline-none h-full block w-full',
         props.class,

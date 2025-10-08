@@ -15,6 +15,7 @@ const props = defineProps<{
   <div class="w-full bg-white shadow-[0px_-5px_4px_rgba(0,0,0,0.05)] py-4 px-6">
     <div class="max-w-[570px] mx-auto flex gap-5">
       <Button
+        data-testid="filter-all"
         :variant="props.isAll ? 'primary' : 'secondary'"
         @click="props.toggleFilter('all')"
         class="w-full"
@@ -24,6 +25,7 @@ const props = defineProps<{
         All
       </Button>
       <Button
+        data-testid="filter-favorites"
         :variant="props.isFavorites ? 'primary' : 'secondary'"
         @click="props.toggleFilter('favorites')"
         class="w-full"

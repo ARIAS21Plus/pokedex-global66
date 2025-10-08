@@ -15,6 +15,7 @@ const props = defineProps<{
 
 <template>
   <div
+    data-testid="pokemon-item"
     class="flex items-center justify-between bg-white rounded py-2 px-3 hover:shadow-md transition-all cursor-pointer"
     @click="props.onOpenModalDetailPokemon(props.pokemon)"
   >
@@ -23,6 +24,7 @@ const props = defineProps<{
     </div>
     <div class="flex-none">
       <Button
+        data-testid="favorite-btn"
         :class="props.isFavorite ? 'text-accent!' : ''"
         size="icon"
         @click.stop="props.toggleFavorite"

@@ -11,6 +11,7 @@ const props = defineProps<{
 <template>
   <div class="flex justify-center">
     <Button
+      data-testid="load-more-btn"
       @click="props.fetchNextPage"
       :disabled="!props.hasNextPage || props.isFetchingNextPage"
       variant="secondary"
