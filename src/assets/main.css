@@ -16,23 +16,20 @@
 
   --color-accent: #eca539;
 
-  --gray-900: #353535;
-  --gray-700: #5e5e5e;
-  --gray-400: #bfbfbf;
-  --gray-200: #e8e8e8;
-  --gray-100: #f5f5f5;
-  --gray-50: #f9f9f9;
+  --color-gray-900: #353535;
+  --color-gray-700: #5e5e5e;
+  --color-gray-400: #bfbfbf;
+  --color-gray-200: #e8e8e8;
+  --color-gray-100: #f5f5f5;
+  --color-gray-50: #f9f9f9;
 
   --font-lato: 'Lato', system-ui, sans-serif;
 
   --radius: 0.313rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 0.75rem;
   --shadow-md: 0px 2px 10px rgba(0, 0, 0, 0.04);
-  --shadow-lg: 0px 2px 10px rgba(0, 0, 0, 0.08);
-  --shadow-xl: 0px 2px 10px rgba(0, 0, 0, 0.12);
 
   --text-md: 1.13rem;
+  --text-xl: 1.38rem;
   --text-2xl: 1.63rem;
 }
 
@@ -43,14 +40,6 @@
   body {
     @apply font-lato;
     color: var(--color-foreground);
+    background-color: var(--color-background);
   }
-}
-
-@layer base {
-}
-
-@layer components {
-}
-
-@layer utilities {
 }

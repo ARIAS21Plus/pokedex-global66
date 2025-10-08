@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Welcome from '@/components/organism/Welcome.organism.vue'
+import Welcome from '@/components/molecule/Welcome.vue'
 </script>
 
 <template>

@@ -32,20 +32,29 @@ const emit = defineEmits(['update:modelValue'])
 </script>
 
 <template>
-  <div class="flex items-center shadow-md rounded w-sm h-14 bg-white">
-    <div v-if="$slots['icon-left']" class="text-secondary-foreground grid place-items-center px-3">
+  <div :class="['flex items-center shadow-md rounded h-14 bg-white', props.class]">
+    <div
+      v-if="$slots['icon-left']"
+      class="text-secondary-foreground grid place-items-center px-3 flex-none"
+    >
       <slot name="icon-left" />
     </div>
 
     <input
-      :class="['placeholder:text-secondary-foreground outline-none h-full block', props.class]"
+      :class="[
+        'placeholder:text-secondary-foreground outline-none h-full block w-full',
+        props.class,
+      ]"
       :type="type"
       :placeholder="placeholder"
       :disabled="disabled"
       :value="modelValue"
       @input="emit('update:modelValue', ($event.target as HTMLInputElement).value)"
     />
-    <div v-if="$slots['icon-right']" class="text-secondary-foreground grid place-items-center px-3">
+    <div
+      v-if="$slots['icon-right']"
+      class="text-secondary-foreground grid place-items-center px-3 flex-none"
+    >
       <slot name="icon-right" />
     </div>
   </div>

@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import PikachuSvg from '@/components/atoms/PikachuSvg.atom.vue'
-import Button from '@/components/atoms/Button.atom.vue'
+import { RouterLink } from 'vue-router'
+import PikachuSvg from '@/components/atoms/PikachuSvg.vue'
+import Button from '@/components/atoms/Button.vue'
 </script>
 
 <template>
@@ -12,7 +13,7 @@ import Button from '@/components/atoms/Button.atom.vue'
         The digital encyclopedia created by Professor Oak is an invaluable tool to Trainers in the
         Pokémon world.
       </p>
-      <Button variant="primary" rounded="full"> Get started </Button>
+      <Button :as="RouterLink" to="/search" variant="primary" rounded="full"> Get started </Button>
     </div>
   </div>
 </template>
