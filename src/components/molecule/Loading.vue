@@ -4,6 +4,6 @@ import PokeBallSvgAtom from '../atoms/PokeBallSvg.vue'
 
 <template>
   <div class="flex items-center justify-center w-full h-dvh">
-    <PokeBallSvgAtom />
+    <PokeBallSvgAtom class="animate-spin" />
   </div>
 </template>
