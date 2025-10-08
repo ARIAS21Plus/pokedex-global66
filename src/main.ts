@@ -6,18 +6,7 @@ import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
-
-import { QueryClient, VueQueryPlugin, type VueQueryPluginOptions } from '@tanstack/vue-query'
-const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      retry: 1,
-      staleTime: Infinity,
-      refetchOnWindowFocus: false,
-    },
-  },
-})
-const vueQueryOptions: VueQueryPluginOptions = { queryClient }
+import { VueQueryPlugin, vueQueryOptions } from './config/vueQueryConfig'
 
 const app = createApp(App)
 
